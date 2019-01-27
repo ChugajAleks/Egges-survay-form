@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top-clean-part">
+        <h1 id="title">Let's decide on eggs!</h1>
+    </div>
+    <div class="main-form">
+        <div class="title-form">
+            <h2 id="description">Why is sad one of the eggs? Let's try to solve their problems.</h2>
+            <p class="introduction">Answer the questions below and send me. Having collected the
+                information, I will try to find a solution and help the eggs.</p>
+        </div>
+
+        <form id="survey-form" action="mailto:chemp.mail@gmail.com" enctype="text/plain" method="post" autocomplete="off">
+
+            <div class="form-container">
+                <div class="field name">
+                    <p class="clarifications-name">What is the name of the fun egg?</p>
+                    <div class="form-name">
+                        <label for="name" id="name-label">Name</label>
+                        <input type="text" name="new-name" id="name" placeholder="Enter name" autocomplete="name"
+                            required>
+                    </div>
+                </div>
+                <div class="field age">
+                    <p class="clarifications-age">What is the age of a sad egg?</p>
+                    <div class="form-age">
+                        <label for="number" id="number-label">Age</label>
+                        <input type="number" name="age" id="number" placeholder="Enter egg age" min="0" max="10"
+                            required>
+                    </div>
+                </div>
+                <div class="field why-sad">
+                    <p class="clarifications-why-sad">Why is a sad egg so sad?</p>
+                    <div class="form-why-sad">
+                        <p>The reasons</p>
+                        <div class="checkboxes">
+                            <label for="salmonellosis" class="checkbox-container">
+                                <input type="checkbox" value="reasons" id="salmonellosis">
+                                He has salmonellosis
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="diarrhea" class="checkbox-container"> 
+                                <input type="checkbox" value="reasons" id="diarrhea">
+                                He has diarrhea
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="fuckfunegg" class="checkbox-container">
+                                <input type="checkbox" value="reasons" id="fuckfunegg">
+                                He was fucked by a fun egg
+                                <span class="checkmark"></span>
+                            </label>
+                            <label for="melancholic" class="checkbox-container">
+                                <input type="checkbox" value="reasons" id="melancholic">
+                                He is melancholic
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="field egg-think">
+                    <p class="clarifications-egg-think">What does a fun egg think?</p>
+                    <div class="form-funeggmind">
+                        <label for="dropdown" class="lab-dropdown">Happy egg thoughts:</label>
+                        <select name="mind" id="dropdown">
+                            <option disabled selected>SELECT AN OPTION</option>
+                            <option value="moron">He is a moron</option>
+                            <option value="notKnowHim">I do not know him</option>
+                            <option value="cute">He is cute</option>
+                            <option value="notKnow">I do not know</option>
+                            <option value="notSay">I know, but I will not say</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field think-you">
+                    <p class="clarifications-think-you">What do you think, how right are you?</p>
+                    <div class="radio-buttons">
+                        <p>Probability of correct answer:</p>
+                        <div class="radio-button">
+                            <input type="radio" name="radio-button" id="correctly" value="correctly">
+                            <label for="correctly">Correctly</label>
+                        </div>
+                        <div class="radio-button">
+                            <input type="radio" name="radio-button" id="wrong" value="wrong">
+                            <label for="wrong">Wrong</label>
+                        </div>
+                        <div class="radio-button">
+                            <input type="radio" name="radio-button" id="perhaps" value="perhaps">
+                            <label for="perhaps">perhaps correctly</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field options">
+                    <p class="clarifications-options">Your question options.</p>
+                    <div class="textarea">
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Any comments?"></textarea>
+                    </div>
+                </div>
+                <div class="field email-field">
+                    <p class="clarifications-email">Your email for spam.</p>
+                    <div class="email">
+                        <label for="email" id="email-label">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="email"
+                            required>
+                    </div>
+                </div>
+                <div class="field submit">
+                    <p class="clarifications-submit">If you think that I am
+                        incorrectly solving this problem, remember the saying:
+                        <span>"Don't teach your grandmother to suck eggs"</span>.</p>
+                    <div class="outer-button">
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="bottom-clean-part"></div>
+</body>
+
+</html>
